@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-bg-image {
+    background-image: url('../../public/images/mybg.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.resize-none {
+    resize: none;
+}
+
+[x-cloak] {
+    display: none;
+}
+
+:root {
+    --primary: rgb(107 114 128);
+    --secondary: rgb(156 163 175);
+  }
+
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+    height: 12px; /* Add this line to hide vertical scrollbar */
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 12px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 2px;
+    border: 2px solid var(--primary);
+    opacity: 0.5;
+  }
